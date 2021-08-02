@@ -8,6 +8,7 @@ done
 for exe in 1d*p-blocking 1d*lcs-blocking
 do
     echo $exe
+    export OMP_NUM_THREADS=12
     ./$exe/exe-$exe 160000 1000 1024 128
 done
 
@@ -21,6 +22,7 @@ done
 for exe in 2d*p-blocking 2d*life-blocking
 do
     echo $exe
+    export OMP_NUM_THREADS=12
     ./$exe/exe-$exe 2000 2000 100 64 64 16
 done
 
@@ -33,6 +35,7 @@ done
 for exe in 3d*p-blocking 
 do
     echo $exe
+    export OMP_NUM_THREADS=12
     ./$exe/exe-$exe 200 200 200 100 32 32 32 8
 done
 

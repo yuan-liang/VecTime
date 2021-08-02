@@ -26,6 +26,6 @@ This package is available under GPL v3.
 * Step1: Simply run 'make' in the main directory. It will generate an executable in each stencil folder.
 
 * Step2: modify the problem sizes and blocking sizes and run './test.sh'. Or if you want to test each kernel, goto the specific folder. For sequential test of a d-dimensional stencil, run ./exe $N1 ... $Nd $NT, where $Ni is the size of the i-th space dimension and
-    $NT is the size of time dimension. For parallel test, run ./exe $N1 ... $Nd $NT $B1 ... $Bd $BT, where $Bi is the blocking size of the i-th space dimension and
+    $NT is the size of time dimension. For parallel test, run 'export OMP_NUM_THREADS=12; ./exe $N1 ... $Nd $NT $B1 ... $Bd $BT', where $Bi is the blocking size of the i-th space dimension and
     $BT is the blocking size of time dimension.
     The output is performance measured by GStenils/s.
