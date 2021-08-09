@@ -1,5 +1,6 @@
 #include "../common.h"
 
+void vectime(double *B, int NX, int NY, int NZ, int T, int xb, int yb, int zb, int tb);
 
 #define STRIDE 2
 
