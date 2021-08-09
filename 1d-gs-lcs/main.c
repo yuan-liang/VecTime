@@ -37,9 +37,9 @@ int main(int argc, char * argv[]) {
 	for (x = 0; x < NX2 + 2 * XSTART; x++) {
 		X2[x] = 'A' + (rand() % 26);
 	}
-#ifdef CHECK
+//#ifdef CHECK
 	run_and_test(naive_scalar, lcs_correct);
-#endif
+//#endif
 
 	run_and_test(vectime, lcs);
 

@@ -35,9 +35,9 @@ int main(int argc, char * argv[]) {
 		A_correct[x] = A_backup[x];
 	}
 
-#ifdef CHECK
+//#ifdef CHECK
 	run_and_test(naive_scalar, A_correct);
-#endif
+//#endif
 
 	run_and_test(vectime, A);
 

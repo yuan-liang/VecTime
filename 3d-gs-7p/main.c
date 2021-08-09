@@ -31,7 +31,7 @@ int main(int argc, char * argv[]) {
 		}
 	}
 
-#ifdef CHECK
+//#ifdef CHECK
 	gettimeofday(&start, 0);
 	for (t = 0; t < T; t++) {
 		for (x = XSTART; x < NX + XSTART; x++) {
@@ -48,7 +48,7 @@ int main(int argc, char * argv[]) {
 	printf("Naive, NX = %d, NY = %d, NZ = %d, T = %d, GStencil/s = %f\n", NX,NY,NZ,T,\
 			((double) NX * NY * NZ * T) / (double)(end.tv_sec - start.tv_sec + (end.tv_usec - start.tv_usec) * 1.0e-6) / 1000000000L);
 
-#endif
+//#endif
 
 	for (x = 0; x < NX + 2 * XSTART; x++) {
 		for (y = 0; y < NY + 2 * YSTART; y++) {

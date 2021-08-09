@@ -41,9 +41,9 @@ int main(int argc, char * argv[]) {
 		}
 	}
 
-#ifdef CHECK
+//#ifdef CHECK
 	run_and_test(scalar, A_correct);
-#endif
+//#endif
 	run_and_test(vectime, A);
 
 
